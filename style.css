@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: white;
+  }
+
+  header {
+    display: flex;
+    position: fixed;
+    background-color: color rgba(47, 49, 47, 0.486);
+    width: 100%;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+  }
