@@ -65,7 +65,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://masterleiva.github.io/Portfolio/)
+Coming soon
+
+- [https://github.com/jrraul4/Portafolio-Personal](https://github.com/jrraul4/Portafolio-Personal)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,4 +146,6 @@ I would like to thank to Microverse and to my coding partners for help me in thi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
