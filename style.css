@@ -579,7 +579,6 @@ li {
   color: white;
 }
 
-
 .features-main:hover {
   background: rgba(0, 0, 0, 0.05);
 }
@@ -593,7 +592,6 @@ li {
   background: #e05304;
   color: #f4f1f0;
 }
-
 
 .features:hover {
   background: rgba(255, 255, 255, 0.12);
@@ -613,7 +611,6 @@ li {
   color: #f4f1f0;
 }
 
-
 .button-about-me:hover {
   background: #fef6e3;
   color: #f55800;
@@ -623,7 +620,6 @@ li {
   background: #e05304;
   color: #f4f1f0;
 }
-
 
 .button-form:hover {
   background: #fef6e3;
