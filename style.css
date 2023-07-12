@@ -384,7 +384,10 @@ a {
 }
 
 .contactSection ul {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+
 }
 
 li {
@@ -392,9 +395,7 @@ li {
 }
 
 .contactSection li {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+  width: 100%;
 }
 
 .contactSection input {
@@ -410,6 +411,11 @@ li {
   background: #fbf8f7;
   border: none;
   padding: 3%;
+}
+
+.contact-Button{
+  display: flex;
+  justify-content: center;
 }
 
 .contact-Button button {
