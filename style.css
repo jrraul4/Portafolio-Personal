@@ -393,6 +393,14 @@ a {
   color: #172b4d;
 }
 
+header ul {
+  left: -100%;
+}
+
+.show {
+  left: 0;
+}
+
 .contactSection ul {
   display: flex;
   flex-direction: column;
@@ -609,14 +617,6 @@ li {
     justify-content: space-around;
     margin-bottom: 100px;
   }
-}
-
-header ul {
-  left: -100%;
-}
-
-.show {
-  left: 0;
 }
 
 .links {
