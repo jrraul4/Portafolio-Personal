@@ -465,6 +465,17 @@ li {
   align-self: center;
   text-align: center;
   border: none;
+  animation: width 750ms linear 400ms ;
+}
+
+.contact-Button button:hover {
+  width: 300px;
+}
+
+@keyframes width {
+  to {
+    width: 50%;
+  }
 }
 
 .social-links-footer {
