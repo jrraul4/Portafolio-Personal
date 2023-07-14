@@ -465,6 +465,19 @@ li {
   align-self: center;
   text-align: center;
   border: none;
+  animation: width 750ms linear 400ms;
+}
+
+.contact-Button button:hover {
+  background: #fef6e3;
+  -webkit-text-fill-color: #ff6b00;
+  width: 300px;
+}
+
+@keyframes width {
+  to {
+    width: 50%;
+  }
 }
 
 .social-links-footer {
@@ -472,6 +485,19 @@ li {
   border-top: 1px solid #dfe1e6;
   padding: 30px 0 10px 0;
   justify-content: center;
+}
+
+.social-links-footer li {
+  transition: all 1s ease;
+}
+
+.links li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 24px 0 15px 20px;
+}
+
+.social-links-footer li:hover {
+  transform: rotate(360deg);
 }
 
 .icon-footer {
@@ -684,11 +710,6 @@ li {
   height: 50px;
 }
 
-.links li {
-  border-bottom: 1px solid #6f6c6b;
-  padding: 24px 0 15px 20px;
-}
-
 .links li a {
   text-decoration: none;
   color: #fff5e1;
@@ -770,11 +791,6 @@ li {
 .button-about-me:active {
   background: #e05304;
   color: #f4f1f0;
-}
-
-.contact-Button button:hover {
-  background: #fef6e3;
-  -webkit-text-fill-color: #ff6b00;
 }
 
 .contact-Button button:active {
