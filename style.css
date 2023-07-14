@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -134,6 +135,16 @@ a {
 
   .social-links .icon {
     margin: 5px 0;
+  }
+
+  .background-headline {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/big-illustration.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: bottom;
   }
 
   #close {
@@ -293,8 +304,9 @@ a {
 
 @media (min-width: 768px) {
   .work-section {
-    grid-template: 150px 448px 435px 435px / auto auto auto;
+    grid-template: 150px 448px 435px 435px / 33% 33% 33%;
     padding: 19.5vh 9.8vw;
+    gap: 2%;
   }
 
   .work-section h2 {
@@ -341,8 +353,21 @@ a {
     margin-top: 24px;
   }
 
-  .projects {
+  .projects h3 p {
+    display: flex;
     justify-content: center;
+    padding: 1%;
+  }
+
+  .projects ul {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .features {
+    margin-right: 1.5%;
+    padding: 1.5%;
   }
 
   .button-projects {
@@ -381,6 +406,14 @@ a {
   font-size: 2em;
   text-align: center;
   color: #172b4d;
+}
+
+header ul {
+  left: -100%;
+}
+
+.show {
+  left: 0;
 }
 
 .contactSection ul {
@@ -443,6 +476,38 @@ li {
 
 .icon-footer {
   padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .contactSection {
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+  }
+
+  .contactSection h2 {
+    text-align: start;
+    margin-right: 35px;
+    margin-bottom: 120px;
+    width: 40%;
+  }
+
+  .contactSection form {
+    width: 55%;
+  }
+
+  .contactSection ul {
+    align-items: start;
+  }
+
+  .contact-Button {
+    display: flex;
+    justify-content: left;
+  }
+
+  .contact-Button button {
+    width: 35%;
+  }
 }
 
 .about-myself {
@@ -561,6 +626,110 @@ li {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .button-about-me {
+    width: 156px;
+  }
+
+  .about-me-illustration {
+    width: 100%;
+    height: 350px;
+    background-image: url(img/about-me-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: center;
+  }
+
+  .about-me {
+    background-image: none;
+    padding-bottom: 120px;
+  }
+
+  .lfs {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+}
+
+.links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  height: 100%;
+  background: #3c3a39;
+  list-style: none;
+  top: 0;
+  padding: 20px;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.close-button {
+  display: flex;
+  justify-content: end;
+}
+
+#close {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.close-button img {
+  width: auto;
+  height: 50px;
+}
+
+.links li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 24px 0 15px 20px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #fff5e1;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #3e3c3c;
+    width: 30vw;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    justify-content: space-evenly;
+    position: static;
+  }
+
+  .links li {
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .links li a {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
 .features-main:hover {
   background: rgba(0, 0, 0, 0.05);
 }
@@ -611,4 +780,8 @@ li {
 .contact-Button button:active {
   background: #e25e00;
   -webkit-text-fill-color: white;
+}
+
+.links li a:hover {
+  color: #ffb116;
 }
