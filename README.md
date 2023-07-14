@@ -67,7 +67,7 @@
 
 Coming soon
 
-- [https://github.com/jrraul4/Portafolio-Personal](https://github.com/jrraul4/Portafolio-Personal)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

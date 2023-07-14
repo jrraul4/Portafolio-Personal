@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -303,8 +304,9 @@ a {
 
 @media (min-width: 768px) {
   .work-section {
-    grid-template: 150px 448px 435px 435px / auto auto auto;
+    grid-template: 150px 448px 435px 435px / 33% 33% 33%;
     padding: 19.5vh 9.8vw;
+    gap: 2%;
   }
 
   .work-section h2 {
@@ -351,8 +353,21 @@ a {
     margin-top: 24px;
   }
 
-  .projects {
+  .projects h3, p{
+    display: flex;
     justify-content: center;
+    padding: 1%;
+  }
+
+  .projects ul {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .features {
+    margin-right: 1.5%;
+    padding: 1.5%;
   }
 
   .button-projects {
@@ -464,16 +479,36 @@ li {
 }
 
 @media (min-width: 768px) {
-  .contact-section {
+  .contactSection {
+    display: flex;
     flex-direction: row;
     padding-top: 120px;
   }
 
-  .contact-section h2 {
+  .contactSection h2 {
     text-align: start;
     margin-right: 35px;
     margin-bottom: 120px;
+    width: 40%;
   }
+
+  .contactSection form{
+    width: 55%;
+  }
+
+  .contactSection ul {
+    align-items: start;
+  }
+
+  .contact-Button {
+    display: flex;
+    justify-content: left;
+  }
+
+  .contact-Button button{
+    width: 35%;
+  }
+
 }
 
 .about-myself {
