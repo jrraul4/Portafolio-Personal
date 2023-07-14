@@ -474,6 +474,14 @@ li {
   justify-content: center;
 }
 
+.social-links-footer li {
+  transition: all 1s ease;
+  }
+  
+.social-links-footer li:hover {
+  transform: rotate(360deg);
+}
+
 .icon-footer {
   padding: 10px;
 }
