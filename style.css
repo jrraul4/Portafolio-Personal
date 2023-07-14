@@ -353,8 +353,7 @@ a {
     margin-top: 24px;
   }
 
-  .projects h3, 
-             p {
+  .projects h3 p {
     display: flex;
     justify-content: center;
     padding: 1%;
